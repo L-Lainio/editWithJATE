@@ -18,12 +18,37 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      
+      new HtmlWebpackPlugin({
+        template: './index.html',
+       title: "J.A.T.E",
+      }),
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
+      }),
+      new WebpackPwaManifest({
+        name: 'Text Editor',
+        short_name: 'Text Editor',
+        description: 'An application that allows you to track your budget.',
+        background_color: '#01579b',
+        theme_color: '#ffffff',
+        start_url: '/',
+        icons: [
+          {
+            src: path.resolve('src/icons/logo.png'),
+            sizes: [192, 512],
+            destination: path.join("assets", 'icons'),
+          },
+        ],
+      }),
     ],
 
     module: {
       rules: [
-        
+        {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader'],
+        },
       ],
     },
   };
