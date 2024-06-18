@@ -30,7 +30,29 @@
 
 ## Description
 
-This application was built as a way to allow freelance web developers to create simple logos for their clients and projects so that they can forego paying a graphic designer. It utilizes inquirer to prompt the user within the command line for how they would like their logo to look (ie. what text they would like their logo to display (up to 3 characters in length), the color of that text, the shape of their logo (triangle, square, or circle) and the color of that shape.) Once the user answers all prompts, then an SVG file is written using their selections to generate a logo.
+will enhance a basic application by incorporating webpack, service workers, and IndexedDB to enable PWA functionality. Upon implementing these features, you will deploy the updated application to Render. To achieve this, you will need to include specific scripts to facilitate the deployment of your bundled application on Render.
+
+User Stories
+Collaborate with your group to address the following tasks:
+
+User Story: As a user, I want to be able to install the web application as a PWA.
+
+User Story: As a user, I want to be able to add and remove my contact cards.
+
+Developer Story: Ensure all scripts run from the root directory package.json.
+
+Developer Story: Enable running npm run start:dev in the command line to start both the client and server.
+
+Developer Story: Implement the ability to run npm run start in the command line to execute the build script and start the server.
+
+Developer Story: Provide the capability to run npm run server in the command line to start only the server without the client.
+
+Developer Story: Establish the functionality to run npm run build in the command line to execute the webpack build script for the client.
+
+Developer Story: Enable running npm run install in the command line to install all client dependencies.
+
+Developer Story: Implement the ability to run npm run client in the command line to start only the client without the server.
+
 
 ## My GIF
 ![]()
@@ -45,17 +67,8 @@ This application was built as a way to allow freelance web developers to create 
 ## Installation
 
 1. Clone the repo:
-   git clone https://github.com/
+   git clone [https://github.com/L-Lainio/editWithJATE](https://github.com/L-Lainio/editWithJATE)
 
-2. Open in VS Code. If you do not have VS code you must install it.
-
-3. Using the terminal, install required npm packages
-
-4.
-
-5.
-
-6.
 
 ## Credits
 
