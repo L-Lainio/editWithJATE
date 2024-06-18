@@ -53,48 +53,43 @@ Developer Story: Enable running npm run install in the command line to install a
 
 Developer Story: Implement the ability to run npm run client in the command line to start only the client without the server.
 
+## Walkthrough video Link
+[![Walkthrough Video](https://share.zight.com/qGubxKb1)](https://share.zight.com/qGubxKb1)
 
 ## My GIF
-![]()
+![](./assets/Zight%20Recording%202024-6-18%20at%205.44.58%20PM.gif)
 
 ## My Screenshot
-![]()
-
+![](./assets/Zight%202024-6-18%20at%205.46.52%20PM.jpeg)
+![](./assets/Zight%202024-6-18%20at%205.47.20%20PM.png)
+![](./assets/Zight%202024-6-18%20at%205.47.36%20PM.png)
+![](./assets/Zight%202024-6-18%20at%205.47.56%20PM.png)
 
 ## Technologies Used
 
 
 ## Installation
-
 1. Clone the repo:
    git clone [https://github.com/L-Lainio/editWithJATE](https://github.com/L-Lainio/editWithJATE)
 
-
 ## Credits
 
-
 ## Features
-
 Features of this application include
 
 ## Usage Information
-
 To run this application, use the
 
-
-
 ## Contribution Guidelines
-
 Open to collaboration, if you choose to do so open an issue and modify any changes you would like to see on a feature branch and wait for approval before merging to the main branch.
 
 ## Render Deployment
-
 [Render Deployment](https://editwithjate.onrender.com)
 
 ## Contact
 Author
 Written by Lora Lainio, if you like what you see and would like to colab contact me.
-
 Contact Me
 GitHub: L-Lainio
 Email: arollainio@gmail.com
+
