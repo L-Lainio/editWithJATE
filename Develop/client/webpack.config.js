@@ -1,14 +1,8 @@
-module.exports = (env) => {
-  if (env !== 'production') {
-    Object.defineProperty(workboxPlugin, 'alreadyCalled', {
-      get() {
-        return false;
-      },
-      set() {}
-    });
-  }
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 
-  return {
+module.exports = {
+  // Other configurations...
+
     mode: 'development',
     entry: {
       main: './src/js/index.js',
@@ -22,15 +16,15 @@ module.exports = (env) => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      // Webpack plugin that generates our html file and injects our bundles
-      new HtmlWebpackPlugin({
-        template: './index.html',
-        title: 'JATE'
-      }),
+      // // Webpack plugin that generates our html file and injects our bundles
+      // new HtmlWebpackPlugin({
+      //   template: './index.html',
+      //   title: 'JATE'
+
       // Injects our custom servie worker
-      new InjectManifest({
-        swSrc: './src-sw.js',
-        swDest: 'src-sw.js',
+      new WorkboxWebpackPlugin.InjectManifest({
+        swSrc: './src/sw.js', // Path to your service worker file
+        swDest: 'service-worker.js', // Output destination for the generated service worker
       }),
       // Creates a manifest.json file.
       new WebpackPwaManifest({
@@ -50,11 +44,8 @@ module.exports = (env) => {
             destination: path.join('assets', 'icons'),
           },
         ],
-      }),
 
-    ],
 
-    module: {
       // CSS Loaders
       rules: [
         {
@@ -65,15 +56,13 @@ module.exports = (env) => {
           test: /\.m?js$/,
           exclude: /node_modules/,
           // We use babel-loader in order to use ES6.
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env'],
-              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
-            },
-          },
+          // use: {
+          //   loader: 'babel-loader',
+          //   options: {
+          //     presets: ['@babel/preset-env'],
+          //     plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
         },
       ],
-    },
-  };
-};
+    }), // Add closing parenthesis here
+  ],
+}
