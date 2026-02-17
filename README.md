@@ -86,10 +86,3 @@ Open to collaboration, if you choose to do so open an issue and modify any chang
 ## Render Deployment
 [Render Deployment](https://editwithjate.onrender.com)
 
-## Contact
-Author
-Written by Lora Lainio, if you like what you see and would like to colab contact me.
-Contact Me
-GitHub: L-Lainio
-Email: arollainio@gmail.com
-
